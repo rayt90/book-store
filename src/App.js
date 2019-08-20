@@ -8,6 +8,7 @@ import Details from "./Components/Details";
 import Cart from "./Components/Cart";
 import ComingSoon from "./Components/ComingSoon";
 import Search from "./Components/Search";
+import Contact from "./Components/Contact";
 import Default from "./Components/Default";
 
 class App extends Component {
@@ -21,9 +22,9 @@ class App extends Component {
           <Route path="/cart" component={Cart} />
           <Route path="/comingsoon" component={ComingSoon} />
           <Route path="/search" component={Search} />
+          <Route path="/contact" component={Contact} />
           <Route component={Default} />
         </Switch>
-
       </React.Fragment>
     );
   }
