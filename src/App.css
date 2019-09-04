@@ -19,3 +19,11 @@ body {
   font-family: 'Gochi Hand', cursive !important;
   font-size: x-large;
 }
+
+@media all and (min-width: 439px) {
+  .carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

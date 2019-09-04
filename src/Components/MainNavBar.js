@@ -29,10 +29,10 @@ export default class MainNavbar extends React.Component {
 
   render() {
     return (
-      <Navbar style={{ backgroundColor: "#000bffc7",  borderBottom: "4px solid #ffe710" }}  dark expand="lg">
+      <Navbar style={{ backgroundColor: "#000bffc7",  borderBottom: "4px solid #ffe710" }}  dark expand="xl">
         <Container>
           <NavbarBrand tag={Link} to="/">
-            Ray's Online bookstore
+            Ray's Online Bookstore
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

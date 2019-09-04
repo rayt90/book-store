@@ -36,7 +36,6 @@ export default class NavBar extends React.Component {
   }
   render() {
     return (
-      <NavWrapper>
         <Navbar className="bg-primary" dark expand="lg">
           <Container>
             <NavbarBrand href="/">
@@ -89,14 +88,9 @@ export default class NavBar extends React.Component {
             </Nav>
           </Container>
         </Navbar>
-      </NavWrapper>
     );
   }
 }
-
-const NavWrapper = styled.nav`
-  text-transform: capitalize;
-`;
 
 const ButtonContainer = styled.button`
   text-transform: capitalize;
