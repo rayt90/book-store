@@ -4,6 +4,7 @@ import "./App.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MainNavbar from "./Components/MainNavBar";
+import Home from "./Components/Home";
 import BookList from "./Components/BookList";
 import Details from "./Components/Details";
 import Cart from "./Components/Cart";
@@ -21,7 +22,7 @@ class App extends Component {
       <React.Fragment>
         <MainNavbar />
         <Switch>
-          <Route exact path="/" component={BookList} />
+          <Route exact path="/" component={Home} />
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
           <Route path="/comingsoon" component={ComingSoon} />

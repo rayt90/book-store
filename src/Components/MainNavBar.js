@@ -29,7 +29,7 @@ export default class MainNavbar extends React.Component {
 
   render() {
     return (
-      <Navbar style={{ backgroundColor: "#3039ff"}} dark expand="lg">
+      <Navbar style={{ backgroundColor: "#000bffc7",  borderBottom: "4px solid #ffe710" }}  dark expand="lg">
         <Container>
           <NavbarBrand tag={Link} to="/">
             Ray's Online bookstore

@@ -5,3 +5,17 @@
   --mainDark:#232528;
   --mainYellow:#ffa400;
 }
+
+#backgroundImage {
+  width: inherit;
+}
+
+body {
+  background: var(--mainWhite) !important;
+  font-family: 'Lato', sans-serif !important;
+}
+
+.navbar-brand {
+  font-family: 'Gochi Hand', cursive !important;
+  font-size: x-large;
+}
