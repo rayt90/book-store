@@ -6,8 +6,15 @@
   --mainYellow:#ffa400;
 }
 
-#backgroundImage {
+/*#backgroundImage {
   width: inherit;
+}*/
+
+#nav {
+  border-width: 0 0 0.14285714285714285rem 0;
+  border-style: solid;
+  border-image: linear-gradient(to right,#f05a28,#e80a89);
+  border-image-slice: 1;
 }
 
 body {
@@ -18,12 +25,4 @@ body {
 .navbar-brand {
   font-family: 'Gochi Hand', cursive !important;
   font-size: x-large;
-}
-
-@media all and (min-width: 439px) {
-  .carousel-caption {
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
 }

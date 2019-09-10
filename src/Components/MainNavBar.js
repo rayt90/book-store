@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLink,
   Button,
-  ButtonGroup
+  ButtonGroup,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ export default class MainNavbar extends React.Component {
 
   render() {
     return (
-      <Navbar style={{ backgroundColor: "#000bffc7",  borderBottom: "4px solid #ffe710" }}  dark expand="xl">
+      <Navbar style={{ backgroundColor: "#181818" }} id="nav" fixed={`top`} dark expand="xl">
         <Container>
           <NavbarBrand tag={Link} to="/">
             Ray's Online Bookstore
