@@ -24,7 +24,7 @@ const CarouselPage = () => {
         className="z-depth-1"
         slide
       >
-        <MDBCarouselInner>
+        <MDBCarouselInner style={{ height:"38rem" }}>
           <MDBCarouselItem itemId="1">
             <MDBView>
               <img className="d-block w-100" src={bookImg1} alt="First slide" />
