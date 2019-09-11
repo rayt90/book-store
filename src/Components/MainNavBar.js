@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLink,
   Button,
-  ButtonGroup,
+  ButtonGroup
 } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -29,14 +29,20 @@ export default class MainNavbar extends React.Component {
 
   render() {
     return (
-      <Navbar style={{ backgroundColor: "#181818" }} id="nav" fixed={`top`} dark expand="xl">
+      <Navbar
+        style={{ backgroundColor: "#181818" }}
+        id="nav"
+        fixed={`top`}
+        dark
+        expand="xl"
+      >
         <Container>
           <NavbarBrand tag={Link} to="/">
             Ray's Online Bookstore
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar >
+            <Nav className="ml-auto" navbar>
               <NavItem className="mx-md-2">
                 <NavLink tag={Link} to="/">
                   Home
@@ -58,16 +64,20 @@ export default class MainNavbar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem className="mx-md-2">
-              <ButtonGroup size="lg">
-                <Button tag={Link} to="/signin">Sign in</Button>
-                <Button tag={Link} to="/signup">Sign Up</Button>
-                <Button tag={Link} to="/cart">
-                  <i className="fa fa-shopping-cart" /> My Cart
-                </Button>
-                <Button tag={Link} to="/wishlist">
-                  <i className="fa fa-heart" />
-                </Button>
-              </ButtonGroup>
+                <ButtonGroup size="lg">
+                  <Button tag={Link} to="/signin">
+                    Sign in
+                  </Button>
+                  <Button tag={Link} to="/signup">
+                    Sign Up
+                  </Button>
+                  <Button tag={Link} to="/cart">
+                    <i className="fa fa-shopping-cart" /> My Cart
+                  </Button>
+                  <Button tag={Link} to="/wishlist">
+                    <i className="fa fa-heart" />
+                  </Button>
+                </ButtonGroup>
               </NavItem>
             </Nav>
           </Collapse>
