@@ -24,13 +24,13 @@ const CarouselPage = () => {
         className="z-depth-1"
         slide
       >
-        <MDBCarouselInner style={{ height:"38rem" }}>
+        <MDBCarouselInner style={{ height:"600px" }}>
           <MDBCarouselItem itemId="1">
             <MDBView>
               <img className="d-block w-100" src={bookImg1} alt="First slide" />
               <MDBMask overlay="black-strong" />
             </MDBView>
-            <MDBCarouselCaption>
+            <MDBCarouselCaption style={{ bottom:"40%" }}>
               <Caption className="h2-responsive">
                 This is a sample website demonstating the use of react to sell
                 books online
@@ -45,7 +45,7 @@ const CarouselPage = () => {
                 alt="Second slide"
               />
             </MDBView>
-            <MDBCarouselCaption>
+            <MDBCarouselCaption style={{ bottom:"40%" }}>
               <Caption className="h2-responsive">
                 Each product can be placed in the cart and bought through a
                 sandbox paypal account
@@ -56,7 +56,7 @@ const CarouselPage = () => {
             <MDBView>
               <img className="d-block w-100" src={bookImg3} alt="Third slide" />
             </MDBView>
-            <MDBCarouselCaption>
+            <MDBCarouselCaption style={{ bottom:"40%" }}>
               <Caption className="h2-responsive">
                 This website was designed using bootstrap, reactstrap,
                 react-reveal & mdbreact
