@@ -3,6 +3,8 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MainNavbar from "./Components/MainNavBar";
+import Separator from "./Components/Separator";
+import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import BookList from "./Components/BookList";
 import Details from "./Components/Details";
@@ -20,6 +22,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <MainNavbar />
+        <Separator />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/details" component={Details} />
@@ -32,6 +35,7 @@ class App extends Component {
           <Route path="/wishlist" component={WishList} />
           <Route component={Default} />
         </Switch>
+        <Footer />
       </React.Fragment>
     );
   }
