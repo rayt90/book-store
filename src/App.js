@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
 import MainNavbar from "./Components/MainNavBar";
 import Separator from "./Components/Separator";
 import Footer from "./Components/Footer";
