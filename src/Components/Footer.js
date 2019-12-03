@@ -7,7 +7,6 @@ import {
   MDBBtn,
   MDBIcon
 } from "mdbreact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Amex from "../img/Amex.svg";
 import Mastercard from "../img/Mastercard.svg";
 import Visa from "../img/Visa.svg";
@@ -29,42 +28,31 @@ export default class Footer extends Component {
               <MDBBtn floating social="tw" size="lg">
                 <MDBIcon fa icon="twitter" className="pr-3" />
               </MDBBtn>
-              <MDBBtn floating social="git" size="lg">
-                <MDBIcon fa icon="github" className="pr-3" />
-              </MDBBtn>
+
             </MDBCol>
             <MDBCol md="6">
-              <h5 className="title">We acccept</h5>
-              <MDBContainer>
-                <MDBRow>
-                  <MDBCol md="4">
-                    <img src={Visa} alt="visa" />
+            <MDBContainer className="d-flex align-items-start" style={{ height: '150px' }}>
+                <MDBRow style={{ width: '100%'}}>
+                <h6 className="title">We acccept</h6>
+                  <MDBCol sm="3">
+                    <img src={Visa} alt="visa"/>
                   </MDBCol>
-                  <MDBCol md="4"><img src={Mastercard} alt="mastercard" /></MDBCol>
-                  <MDBCol md="4"><img src={Amex} alt="amex" /></MDBCol>
+                  <MDBCol sm="3">
+                    <img src={Mastercard} alt="mastercard"/>
+                  </MDBCol>
+                  <MDBCol sm="3">
+                    <img src={Amex} alt="amex" />
+                  </MDBCol>
                 </MDBRow>
               </MDBContainer>
-              <ul>
-                <li className="list-unstyled">
-                  <a href="#!">Link 1</a>
-                </li>
-                <li className="list-unstyled">
-                  <a href="#!">Link 2</a>
-                </li>
-                <li className="list-unstyled">
-                  <a href="#!">Link 3</a>
-                </li>
-                <li className="list-unstyled">
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
         <div className="footer-copyright text-center py-3">
           <MDBContainer fluid>
             &copy; {new Date().getFullYear()} Copyright:{" "}
-            <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+            <a href="https://github.com/rayt90"> Ray's Online Bookstore </a>
+            <p>ABN: ** *** *** ***</p>
           </MDBContainer>
         </div>
       </MDBFooter>
