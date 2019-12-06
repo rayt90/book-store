@@ -30,7 +30,7 @@ export default class MainNavbar extends React.Component {
   render() {
     return (
       <Navbar
-        style={{ backgroundColor: "#181818" }}
+        style={{ backgroundColor: "var(--mainDark)" }}
         id="nav"
         fixed={`top`}
         dark

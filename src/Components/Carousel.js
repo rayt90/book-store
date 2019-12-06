@@ -43,6 +43,7 @@ const CarouselPage = () => {
                 className="d-block w-100"
                 src={bookImg2}
                 alt="Second slide"
+                style={{ height:"fit-content"}}
               />
             </MDBView>
             <MDBCarouselCaption style={{ bottom:"40%" }}>
@@ -54,7 +55,7 @@ const CarouselPage = () => {
           </MDBCarouselItem>
           <MDBCarouselItem itemId="3">
             <MDBView>
-              <img className="d-block w-100" src={bookImg3} alt="Third slide" />
+              <img className="d-block w-100" src={bookImg3} alt="Third slide" style={{ height:"fit-content"}} />
             </MDBView>
             <MDBCarouselCaption style={{ bottom:"40%" }}>
               <Caption className="h2-responsive">
