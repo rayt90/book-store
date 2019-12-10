@@ -1,13 +1,13 @@
 :root{
   --mainBlue:#3039ff;
-  --lightBlue:#009ffd;
+  --lightBlue:#00ffff;
   --mainWhite:#f3f3f3;
   --mainDark:#181818;
   --mainYellow:#ffa400;
 }
 
 #nav {
-  border-width: 0 0 0.14285714285714285rem 0;
+  border-width: 0 0 0.30rem 0;
   border-style: solid;
   border-image: linear-gradient(to right,#f05a28,#e80a89);
   border-image-slice: 1;
@@ -21,4 +21,9 @@ body {
 .navbar-brand {
   font-family: 'Gochi Hand', cursive !important;
   font-size: x-large;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainWhite)!important;
 }
