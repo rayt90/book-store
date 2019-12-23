@@ -40,6 +40,7 @@ class App extends Component {
           <Route component={Default} />
         </Switch>
         <Footer />
+
       </React.Fragment>
     );
   }

@@ -6,7 +6,7 @@
   --mainYellow:#ffa400;
 }
 
-#nav {
+#nav{
   border-width: 0 0 0.30rem 0;
   border-style: solid;
   border-image: linear-gradient(to right,#f05a28,#e80a89);
